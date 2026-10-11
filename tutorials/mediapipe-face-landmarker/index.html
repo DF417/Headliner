@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediaPipe Face Landmarker Tutorial</title>
+  </head>
+  <body>
+    <main>
+      <h1>MediaPipe Face Landmarker</h1>
+      <p>Live facial landmark tracking with your webcam.</p>
+
+      <button id="startButton">Start webcam tracking</button>
+      <p id="status" role="status">Click the button to begin.</p>
+
+      <div class="video-container">
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="output"></canvas>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
