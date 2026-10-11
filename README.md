@@ -20,8 +20,14 @@ This is an initial experiment for our hands-free page-turning project. It helps 
 
 ## Setup
 
-1. Open a terminal in this project folder.
-2. Install the required dependencies:
+1. Open a terminal at the root of the `Headliner` repository.
+2. Navigate to the MediaPipe tutorial folder:
+
+   ```bash
+   cd tutorials/mediapipe-face-landmarker
+   ```
+
+3. Install the required dependencies:
 
    ```bash
    npm install
@@ -29,16 +35,17 @@ This is an initial experiment for our hands-free page-turning project. It helps 
 
 ## Running the Project
 
-1. In the terminal, start the development server:
+1. Make sure your terminal is inside the `tutorials/mediapipe-face-landmarker` folder.
+2. Start the development server:
 
    ```bash
    npm run dev
    ```
 
-2. Open the local URL displayed in the terminal, usually `http://localhost:5173/`.
-3. Click **Start webcam tracking**.
-4. Allow the browser to access your webcam.
-5. Move your head and check that the facial landmarks follow your movements.
+3. Open the local URL displayed in the terminal, usually `http://localhost:5173/`.
+4. Click **Start webcam tracking**.
+5. Allow the browser to access your webcam.
+6. Move your head and check that the facial landmarks follow your movements.
 
 ## Expected Result
 
