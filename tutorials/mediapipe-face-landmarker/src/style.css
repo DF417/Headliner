@@ -62,3 +62,43 @@ canvas {
   transform: scaleX(-1);
   pointer-events: none;
 }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.controls button {
+  margin: 8px 0;
+}
+
+.readouts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 16px 0;
+  padding: 12px;
+  background: white;
+  border-radius: 12px;
+}
+
+.readouts p {
+  margin: 8px 0;
+}
+
+#gestureStatus {
+  min-height: 24px;
+  font-weight: bold;
+}
+
+label {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

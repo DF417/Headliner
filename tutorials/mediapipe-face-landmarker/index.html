@@ -1,23 +1,49 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MediaPipe Face Landmarker Tutorial</title>
+    <title>Headliner Head-Tilt Sandbox</title>
   </head>
+
   <body>
     <main>
-      <h1>MediaPipe Face Landmarker</h1>
-      <p>Live facial landmark tracking with your webcam.</p>
+      <h1>Headliner Head-Tilt Sandbox</h1>
 
-      <button id="startButton">Start webcam tracking</button>
-      <p id="status" role="status">Click the button to begin.</p>
+      <p>
+        Calibrate in your comfortable playing position.
+        Tilt right for Next and left for Previous.
+      </p>
+
+      <div class="controls">
+        <button id="startButton">Start webcam tracking</button>
+        <button id="calibrateButton" disabled>Calibrate neutral position</button>
+        <button id="pauseButton" disabled>Pause page turns</button>
+      </div>
+
+      <p id="status" role="status">Start the webcam to begin.</p>
+      <p id="gestureStatus" role="status">Calibration required.</p>
+
+      <div class="readouts">
+        <p>Head angle: <strong id="angleValue">—</strong></p>
+        <p>Test page: <strong id="pageValue">5</strong> / 10</p>
+        <p>Last action: <strong id="actionValue">None</strong></p>
+      </div>
+
+      <label>
+        <input id="reverseDirection" type="checkbox" />
+        Reverse tilt directions if the webcam test shows them backward
+      </label>
 
       <div class="video-container">
         <video id="webcam" autoplay playsinline muted></video>
         <canvas id="output"></canvas>
       </div>
+
+      <p>
+        After each page turn, return to your neutral position
+        before making another gesture.
+      </p>
     </main>
 
     <script type="module" src="/src/main.js"></script>
