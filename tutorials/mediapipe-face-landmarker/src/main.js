@@ -11,7 +11,7 @@ const SETTINGS = {
   tiltDegrees: 15,
   neutralDegrees: 7,
   holdMs: 300,
-  cooldownMs: 800,
+  cooldownMs: 1200,
   calibrationMs: 1000,
   calibrationMaxSpread: 4,
   smoothingMs: 100,
